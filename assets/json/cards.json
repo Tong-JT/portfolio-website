@@ -1,0 +1,23 @@
+[
+  {
+    "id": "card1",
+    "title": "Project 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "./assets/images/coding.jpg",
+    "tags": ["UX Design", "HTML"]
+  },
+  {
+    "id": "card2",
+    "title": "Project 2",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+    "image": "./assets/images/coding.jpg",
+    "tags": ["Python", "Machine Learning"]
+  },
+  {
+    "id": "card3",
+    "title": "Project 3",
+    "description": "Unde omnis iste natus erro.",
+    "image": "./assets/images/coding.jpg",
+    "tags": ["Java", "GUI"]
+  }
+]

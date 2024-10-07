@@ -1,0 +1,130 @@
+{
+  "skills": [
+    {
+      "header": "Skills",
+      "items": [
+        {
+          "title": "Languages",
+          "description": [
+            "Python",
+            "Java",
+            "C#",
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ]
+        },
+        {
+          "title": "Frameworks & APIs",
+          "description": [
+            "Qt, PySide, PyQt",
+            "numPY",
+            "OpenGL, OpenCV"
+          ]
+        },
+        {
+          "title": "Software",
+          "description": [
+            "Maya",
+            "Unity",
+            "Blender"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Achievements",
+      "items": [
+        {
+          "title": "Achievement 1",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        },
+        {
+          "title": "Achievement 2",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        },
+        {
+          "title": "Achievement 3",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        },
+        {
+          "title": "Achievement 4",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        }
+      ]
+    },
+    {
+      "header": "Education",
+      "items": [
+        {
+          "title": "Education 1",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        },
+        {
+          "title": "Education 2",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        },
+        {
+          "title": "Education 3",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        }
+      ]
+    },
+    {
+      "header": "Publications",
+      "items": [
+        {
+          "title": "Publication 1",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        },
+        {
+          "title": "Publication 2",
+          "description": "chitecto beatae vitae dicta sunt explicab"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "header": "Experience",
+      "items": [
+        {
+          "title": "Job 1, Company",
+          "date": "Time Year - Present",
+          "details": [
+            "sequatur? Quis autem vel eum iure reprehe",
+            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
+            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea",
+            "sequatur? Quis autem vel eum iure reprehe",
+            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
+            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea"
+          ]
+        },
+        {
+          "title": "Job 2, Company",
+          "date": "Time Year - Time Year",
+          "details": [
+            "sequatur? Quis autem vel eum iure reprehe",
+            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
+            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea",
+            "sequatur? Quis autem vel eum iure reprehe",
+            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
+            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea"
+          ]
+        },
+        {
+          "title": "Job 3, Company",
+          "date": "Time Year - Time Year",
+          "details": [
+            "sequatur? Quis autem vel eum iure reprehe",
+            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
+            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea",
+            "sequatur? Quis autem vel eum iure reprehe",
+            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
+            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea"
+          ]
+        }
+      ]
+    }
+  ]
+}
