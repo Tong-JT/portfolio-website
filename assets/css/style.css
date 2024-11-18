@@ -8,6 +8,12 @@ h3,
     font-style: normal;
 }
 
+h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
 body {
     color: rgb(53, 56, 57);
     font-family: "Albert Sans", sans-serif;
@@ -19,7 +25,7 @@ body {
 .text-muted {
     color: rgb(191, 114, 121) !important;
     font-family: "Albert Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     letter-spacing: -0.5px;
 }
 
@@ -30,7 +36,9 @@ body {
 }
 
 .nav-link {
-    font-weight: 600;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.2px;
 }
 
 .nav-extra {
@@ -59,24 +67,24 @@ body {
 .menu {
     color: rgb(53, 56, 57);
     position: relative;
-}
 
-.menu:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60%;
-    height: 3px;
-    bottom: 0;
-    left: 50%;
-    background-color: rgb(191, 114, 121);
-    transform: translateX(-50%) scaleX(0);
-    transition: transform 0.3s ease;
-    border-radius: 3px;
-}
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 60%;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        background-color: rgb(191, 114, 121);
+        transform: translateX(-50%) scaleX(0);
+        transition: transform 0.3s ease;
+        border-radius: 3px;
+    }
 
-.menu:hover:before {
-    transform: translateX(-50%) scaleX(1);
+    &:hover:before {
+        transform: translateX(-50%) scaleX(1);
+    }
 }
 
 .header {
@@ -101,6 +109,24 @@ body {
     transition: all 0.5s;
     cursor: pointer;
     width: 180px;
+
+    &:hover span {
+        padding-right: 25px;
+    }
+    
+    & span:after {
+        font-family: FontAwesome;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    &:hover span:after {
+        opacity: 1;
+        right: 0;
+    }  
 }
 
 .button-text {
@@ -115,6 +141,14 @@ body {
 .btn-dark-custom {
     color: #fff;
     background-color: rgb(191, 114, 121);
+
+    & span:after {
+        content: "\f07b";
+    }
+
+    &:hover {
+        color: #ffffff;
+    }
 }
 
 .btn-clear-custom {
@@ -122,43 +156,15 @@ body {
     outline-offset: -3px;
     color: rgb(53, 56, 57);
     background-color: rgb(255, 255, 255, 0);
+
+    & span:after {
+        content: "\f0e0";
+    }
+
+    &:hover {
+        color: rgb(53, 56, 57);
+    }
 }
-
-.btn-contact:hover span {
-    padding-right: 25px;
-}
-
-.btn-contact span:after {
-    font-family: FontAwesome;
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.btn-dark-custom span:after {
-    content: "\f07b";
-}
-
-.btn-clear-custom span:after {
-    content: "\f0e0";
-}
-
-.btn-contact:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.btn-clear-custom:hover {
-    color: rgb(53, 56, 57);
-}
-
-.btn-dark-custom:hover {
-    color: #ffffff;
-}
-
-
 
 .bracket {
     font-size: 1.3em;
@@ -191,11 +197,11 @@ body {
     display: inline-block;
     transform: scale(.9);
     transition: all .3s;
-}
 
-.card:hover {
-    transform: scale(.95);
-    box-shadow: 8px 10px rgba(150, 96, 92, 0.32);
+    &:hover {
+        transform: scale(.95);
+        box-shadow: 8px 10px rgba(150, 96, 92, 0.32);
+    }
 }
 
 .card-top {
@@ -240,7 +246,6 @@ body {
 
 .card:hover .card-image {
     -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
@@ -279,11 +284,7 @@ body {
     width: 100%;
 }
 
-h2 {
-    margin-top: 0;
-    color: #333;
-    text-align: center;
-}
+
 
 .form-group {
     margin-bottom: 1rem;
@@ -304,7 +305,6 @@ textarea {
     color: red;
     font-size: 0.875rem;
     display: none;
-    /* Hidden by default */
 }
 
 .submit-button {
@@ -317,11 +317,11 @@ textarea {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
-}
 
-.submit-button:hover {
-    background-color: rgb(204, 104, 112);
-    animation: shadow-pulse 1.5s infinite;
+    &:hover {
+        background-color: rgb(204, 104, 112);
+        animation: shadow-pulse 1.5s infinite;
+    }
 }
 
 @keyframes shadow-pulse {
@@ -343,12 +343,12 @@ textarea {
 .contact-address {
     color: rgb(53, 56, 57);
     text-decoration: none;
-}
 
-.contact-address:hover {
-    color: rgb(53, 56, 57);
-    background-color: rgb(247, 216, 216);
-    border-radius: 10px;
-    transition: background-color 0.2s ease-out;
-    text-decoration: none;
+    &:hover {
+        color: rgb(53, 56, 57);
+        background-color: rgb(247, 216, 216);
+        border-radius: 10px;
+        transition: background-color 0.2s ease-out;
+        text-decoration: none;
+    }
 }
