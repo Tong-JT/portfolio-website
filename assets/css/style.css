@@ -18,7 +18,9 @@ body {
 
 .text-muted {
     color: rgb(191, 114, 121) !important;
+    font-family: "Albert Sans", sans-serif;
     font-weight: bold;
+    letter-spacing: -0.5px;
 }
 
 .navbar {
@@ -252,11 +254,8 @@ body {
 }
 
 .card-tag {
-
     border-radius: 10px;
     background-color: #eed7de;
-    /*
-    outline: solid 2px rgb(141, 141, 141); */
 }
 
 
