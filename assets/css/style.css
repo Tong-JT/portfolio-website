@@ -16,6 +16,21 @@ body {
     font-style: normal;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        right: 0;
+        width: auto; /* Adjust width here */
+        min-width: 150px; /* Set a minimum width */
+    }
+    .navbar-collapse .nav-link {
+        text-align: right; /* Align text to the right */
+    }
+}
+
 .text-muted {
     color: rgb(191, 114, 121) !important;
     font-weight: bold;
