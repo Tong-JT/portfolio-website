@@ -5,7 +5,7 @@
       "items": [
         {
           "title": "Languages",
-          "description": [
+          "details": [
             "Python",
             "Java",
             "C#",
@@ -16,7 +16,7 @@
         },
         {
           "title": "Frameworks & APIs",
-          "description": [
+          "details": [
             "Qt, PySide, PyQt",
             "numPY",
             "OpenGL, OpenCV"
@@ -24,7 +24,7 @@
         },
         {
           "title": "Software",
-          "description": [
+          "details": [
             "Maya",
             "Unity",
             "Blender"
@@ -37,19 +37,19 @@
       "items": [
         {
           "title": "School of Pharmacy Recognition for Sustained Community Engagement",
-          "description": "University of Otago 2022"
+          "date": "University of Otago 2022"
         },
         {
           "title": "University of Otago Student Leadership Award",
-          "description": "University of Otago 2022"
+          "date": "University of Otago 2022"
         },
         {
           "title": "Leaders of Tomorrow Scholarship",
-          "description": "University of Otago 2017"
+          "date": "University of Otago 2017"
         },
         {
           "title": "Johnsonville Youth Grant",
-          "description": "Johnsonville Youth Grants Trust 2017"
+          "date": "Johnsonville Youth Grants Trust 2017"
         }
       ]
     },
@@ -57,16 +57,16 @@
       "header": "Education",
       "items": [
         {
-          "title": "Victoria University of Wellington, 2024 - Present",
-          "description": "chitecto beatae vitae dicta sunt explicab"
+          "title": "Victoria University of Wellington",
+          "date": "Master of Software Development (MSwDev), 2024 - Present"
         },
         {
-          "title": "University of Auckland, 2022 - 2023",
-          "description": "chitecto beatae vitae dicta sunt explicab"
+          "title": "University of Auckland",
+          "date": "Postgraduate Certificate in Health (PgCertHSc), Digital Health, 2022 - 2023"
         },
         {
-          "title": "University of Otago, 2018 - 2022",
-          "description": "chitecto beatae vitae dicta sunt explicab"
+          "title": "University of Otago",
+          "date": "Bachelor of Pharmacy (BPharm), 2018 - 2022"
         }
       ]
     },
@@ -75,11 +75,11 @@
       "items": [
         {
           "title": "Investigating pharmacist use of electronic health records",
-          "description": "chitecto beatae vitae dicta sunt explicab"
+          "date": "chitecto beatae vitae dicta sunt explicab"
         },
         {
           "title": "Publication 2",
-          "description": "chitecto beatae vitae dicta sunt explicab"
+          "date": "chitecto beatae vitae dicta sunt explicab"
         }
       ]
     }
@@ -99,17 +99,8 @@
           ]
         },
         {
-          "title": "Qualified Pharmacist - Intern Pharmacist",
-          "date": "Time Year - Time Year",
-          "details": [
-            "sequatur? Quis autem vel eum iure reprehe",
-            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
-            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea"
-          ]
-        },
-        {
-          "title": "Intern Pharmacist",
-          "date": "Dec 2021 - Dec 2022",
+          "title": "Staff Pharmacist/Intern Pharmacist",
+          "date": "Various sites, Dec 2021 - Aug 2023",
           "details": [
             "Liaised with government contacts to ensure smooth integration of digital resources, including RAT test and flu vaccination CIR, ReCare, and Concerto.",
             "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",

@@ -36,18 +36,18 @@ class Card {
     updateDom() {
     }
     activateListeners() {
-        var $cardDom = $('#' + this.idCard);
+        let $cardDom = $('#' + this.idCard);
         $cardDom.on('mouseover', () => {
-            var $cardTitle = $cardDom.find('.card-title');
-            var $cardDesc = $cardDom.find('.card-desc');
-            var $cardMiddle = $cardDom.find('.card-mid');
-            var $cardFooter = $cardDom.find('.card-footer');
-            var cardMiddleHeight = $cardTitle.outerHeight(true) + $cardDesc.outerHeight(true)+ $cardFooter.outerHeight(true);
+            let $cardTitle = $cardDom.find('.card-title');
+            let $cardDesc = $cardDom.find('.card-desc');
+            let $cardMiddle = $cardDom.find('.card-mid');
+            let $cardFooter = $cardDom.find('.card-footer');
+            let cardMiddleHeight = $cardTitle.outerHeight(true) + $cardDesc.outerHeight(true)+ $cardFooter.outerHeight(true);
             $cardMiddle.css('height', cardMiddleHeight + 15 + 'px');
             console.log(cardMiddleHeight);
         });
         $cardDom.on('mouseout', () => {
-            var $cardMiddle = $cardDom.find('.card-mid');
+            let $cardMiddle = $cardDom.find('.card-mid');
             $cardMiddle.css('height', '100px');
         });
     }
@@ -110,7 +110,7 @@ $(document).ready(async function () {
     carouselInstance.start();
 
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 0) {
+        if ($(document).scrollTop() > 0 && $(window).width() > 991.98) {
             $('.navbar').addClass('setvisible');
         } else {
             $('.navbar').removeClass('setvisible');
@@ -122,19 +122,23 @@ $(document).ready(async function () {
             let centreHtml = `
             <div class="centre-section wow fadeInUp">
                 <h3 class="section-header wow fadeInUp">${section.header}</h3>
-                <ul class="section-items wow fadeInUp">
-                    ${section.items.map(item => `
-                        <h5 class = "job-title pt-1 wow fadeInUp"><strong>${item.title}</strong></h5>
-                        <p class = "wow fadeInUp"><strong>${item.date}</strong></p>
-                        <ul class="section-item pb-4 wow fadeInUp">
-                            <ul>
-                                ${Array.isArray(item.details)
-                    ? item.details.map(desc => `<li class = "wow fadeInUp">${desc}</li>`).join('')
-                    : `<li class= "wow fadeInUp">${item.details}</li>`}
-                            </ul>
+                ${section.items.map(item => {
+                    return `
+                        <h5 class="job-title pt-1 wow fadeInUp">
+                            <strong>${item.title}</strong>
+                        </h5>
+                        <p class="wow fadeInUp job-date">
+                            <em>${item.date}</em>
+                        </p>
+                        <ul class="section-item pb-lg-4 wow fadeInUp">
+                            ${
+                                Array.isArray(item.details)
+                                ? item.details.map(desc => `<li class="wow fadeInUp">${desc}</li>`).join('')
+                                : `<li class="wow fadeInUp">${item.details}</li>`
+                            }
                         </ul>
-                    `).join('')}
-                </ul>
+                    `;
+                }).join('')}
             </div>
             `;
             $('.centre').append(centreHtml);
@@ -144,19 +148,42 @@ $(document).ready(async function () {
         data.skills.forEach(section => {
             let sidebarHtml = `
             <div class="sidebar-section wow fadeInUp">
-                <h3 class="section-header wow fadeInUp">${section.header}</h3>
-                <ul class="section-items wow fadeInUp">
-                    ${section.items.map(item => `
-                        <li class="section-item wow fadeInUp">
-                            <p class = "mb-0 mt-2 wow fadeInUp"><strong>${item.title}</strong>: </p>
-                            <ul>
-                                ${Array.isArray(item.description)
-                    ? item.description.map(desc => `<li class = "wow fadeInUp">${desc}</li>`).join('')
-                    : `<li class = "mb-2 wow fadeInUp">${item.description}</li>`}
-                            </ul>
-                        </li>
-                    `).join('')}
-                </ul>
+              <h3 class="section-header wow fadeInUp pt-2 pt-lg-3">${section.header}</h3>
+              
+
+                ${section.items.map(item => {
+                    let dates
+                    if (item["date"]) {
+                        dates =
+                        `<p class="wow fadeInUp job-date">
+                            <em>${item.date}</em>
+                        </p>`
+                    }
+                    else {
+                        dates = `<span></span>`
+                    }
+                    let details
+                    if (item["details"]) {
+                        details =
+                        `<ul class="section-item pb-lg-2 wow fadeInUp">
+                        ${Array.isArray(item.details) 
+                            ? item.details.map(desc => 
+                                `<li class="wow fadeInUp">${desc}</li>`
+                            ).join('') 
+                            : `<li class="mb-2 wow fadeInUp">${item.details}</li>`}
+                        </ul>`
+                    }
+                    else {
+                        details = `<ul class="section-item mb-3"></ul>`
+                    }
+                    return `
+                        <h5 class="job-title wow fadeInUp">
+                        <p class="mb-0 mt-2 wow fadeInUp"><strong>${item.title}</strong></p>
+                        </h5>
+                        ${dates}
+                        ${details}
+                    `;
+                }).join('')}
             </div>
             `;
             $('.sidebar').append(sidebarHtml);
@@ -165,20 +192,27 @@ $(document).ready(async function () {
         });
     });
 
+    
+
+
     $.getJSON('assets/json/cards.json', function (data) {
         data.forEach(card => {
             let tagsHtml = card.tags.map(tag => `<span class="card-tag px-2 py-1 mr-2">${tag}</span>`).join(' ');
             let cardHtml = `
+            
                 <div class="card" id="${card.id}">
+                    <a class="card-link" href="${card.link}">
                     <div class="card-top"><img class="card-image" alt="" src="${card.image}"/></div>
                     <div class="card-mid">
                         <h4 class="card-title font-weight-bold">${card.title}</h4>
                         <label class="card-desc">${card.description}</label>
                     </div>
+                    </a>
                     <div class="card-footer">
                         ${tagsHtml}
-                    </div>
+                    </div>  
                 </div>
+
             `;
             $('#card-container').append(cardHtml);
             let portfolioCard = new Card(card.id, card.title, card.description, card.image);

@@ -1,3 +1,7 @@
+* {
+    box-sizing:border-box
+  }
+
 h3,
 .sectionheader,
 .title,
@@ -6,6 +10,14 @@ h3,
     font-optical-sizing: auto;
     font-weight: 700 !important;
     font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important; 
+    overflow-x: hidden;
+    
 }
 
 h2 {
@@ -26,34 +38,148 @@ body {
     border: none;
 }
 
-@media (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
+    .navbar {
+        background-color: white !important;
+        padding: 0 !important;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    }
     .navbar-collapse {
         right: 0;
         width: auto; /* Adjust width here */
         min-width: 150px; /* Set a minimum width */
     }
     .navbar-collapse .nav-link {
-        text-align: right; /* Align text to the right */
+        text-align: right;
     }
+    .greeting {
+        font-size: 1.8em;
+    }
+    .typing-container {
+        word-spacing: -3px;
+    }
+    .typing-container .bracket {
+        font-size: x-large;
+    }
+    .typing-container #feature-text {
+        font-size: large;
+        word-spacing: 0px;
+    }
+    .navbar-brand .title {
+        font-size: x-large;
+    }
+    .nav-link {
+        font-size: medium;
+    }
+    .subtitle {
+        font-size: small;
+        text-align: center;
+    }
+    .titlebuttons {
+        gap: 10px;
+    }
+    .btn-contact {
+        font-size: small;
+        width: 160px !important;
+        margin-bottom: 0 !important;
+    }
+    .cvtitle {
+        font-size: x-large;
+        text-align: left;
+    }
+    .cv-container {
+        padding: 0;
+    }
+    .cvstructure {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .section-header {
+        font-size: large !important;
+        margin-top: 15px;
+    }
+    .section-item {
+        padding-inline-start: 20px;
+        font-size: small;
+    }
+    .sectionheader {
+        font-size: x-large;
+        text-align: left;
+        text-underline-offset: 4px !important;
+        text-decoration-thickness: 3px !important;
+    }
+    .sidebar {
+        border-right: 0 !important;
+    }
+    .job-title {
+        font-size: medium;
+    }
+    .job-date {
+        font-size: small;
+    }
+    .link-header {
+        font-size: large;
+        margin-bottom: 0 !important;
+    }
+    .link-subtitle {
+        font-size: small;
+    }
+
+    .contacttitle {
+        font-size: x-large;
+        text-align: center;
+    }
+    .contact-address {
+        font-size: small;
+    }
+    .contact-details {
+        font-size: small;
+    }
+    .form-group {
+        font-size: small;
+        
+        #email, #message {
+            font-size: small;
+            padding: 0.5em;
+        }
+    }
+    .submit-button {
+        padding: 0.5em !important;
+    }
+}
+
+.cvstructure {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-toggler-icon {
+    font-size: large;
 }
 
 .text-muted {
     color: rgb(191, 114, 121) !important;
     font-family: "Albert Sans", sans-serif;
-    font-weight: 900;
+    font-weight: 600;
+    font-size: 25px;
+    word-spacing: 0px;
     letter-spacing: -0.5px;
 }
 
 .navbar {
     background-color: rgb(255, 255, 255, 0);
     transition: all 0.3s ease-in;
+    word-spacing: -5px;
     -webkit-transition: all 0.3s ease-in;
 }
 
 .nav-link {
     font-family: "Albert Sans", sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: -0.2px;
+    word-spacing: 0px;
 }
 
 .nav-extra {
@@ -65,7 +191,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
+.title {
     font-size: xx-large;
 }
 
@@ -77,11 +203,18 @@ body {
     color: #5b5557;
 }
 
-
+.job-title {
+    margin-block-end: 0;
+}
+.job-date {
+    margin-block-start: 0 !important; 
+    margin-bottom: 0.5rem; 
+}
 
 .menu {
     color: rgb(53, 56, 57);
     position: relative;
+    margin-bottom: 0 !important;
 
     &:before {
         content: "";
@@ -108,11 +241,9 @@ body {
 }
 
 .subtitle {
-    max-width: 800px;
     line-height: 1.5;
-    word-wrap: break-word;
+    word-wrap:normal;
 }
-
 
 
 
@@ -191,6 +322,10 @@ body {
 
 .sectionheader {
     text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(191, 114, 121);
+    text-decoration-thickness: 5px;
 }
 
 .sidebar {
@@ -203,13 +338,10 @@ body {
 
 
 .card {
-    width: 400px;
+    max-width: 100%;
     background-color: white;
     text-align: left;
-    cursor: pointer;
     position: relative;
-    height: 320px;
-    display: inline-block;
     transform: scale(.9);
     transition: all .3s;
 
@@ -219,9 +351,17 @@ body {
     }
 }
 
+.card-link {
+    color: black;
+
+    &:hover {
+        color: black;
+    }
+}
+
 .card-top {
-    width: 100%;
-    height: 270px;
+    max-width: 100%;
+    height: 15em;
     background-color: #f1f1f1;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -260,7 +400,6 @@ body {
 }
 
 .card:hover .card-image {
-    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
@@ -323,19 +462,17 @@ textarea {
 }
 
 .submit-button {
-    background-color: rgb(222, 125, 133);
+    background-color: rgb(191, 114, 121);
     color: white;
     border: none;
     padding: 0.75rem;
     border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
 
     &:hover {
         background-color: rgb(204, 104, 112);
-        animation: shadow-pulse 1.5s infinite;
+        animation: shadow-pulse 1.5s;
     }
 }
 
