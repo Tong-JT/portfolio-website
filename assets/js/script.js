@@ -79,7 +79,7 @@ class Carousel {
         }
     }
     async deleteSentence() {
-        const sentence = $(this.eleRef).html();
+        let sentence = $(this.eleRef).html();
         const letters = sentence.split("");
         let i = 0;
         while (letters.length > 0) {
@@ -101,9 +101,8 @@ $(document).ready(async function () {
 
     const carouselText = [
         { text: "Software Development", color: "palevioletred" },
-        { text: "Data Science", color: "salmon" },
-        { text: "Web Development", color: "cornflowerblue" },
-        { text: "Machine Learning", color: "darkcyan" },
+        { text: "Full Stack Development", color: "salmon" },
+        { text: "Web Development", color: "cornflowerblue" }
         
     ];
     const carouselInstance = new Carousel(carouselText, "#feature-text");
@@ -130,7 +129,7 @@ $(document).ready(async function () {
                         <p class="wow fadeInUp job-date">
                             <em>${item.date}</em>
                         </p>
-                        <ul class="section-item pb-lg-4 wow fadeInUp">
+                        <ul class="section-item pb-lg-2 wow fadeInUp">
                             ${
                                 Array.isArray(item.details)
                                 ? item.details.map(desc => `<li class="wow fadeInUp">${desc}</li>`).join('')
@@ -196,29 +195,32 @@ $(document).ready(async function () {
 
 
     $.getJSON('assets/json/cards.json', function (data) {
-        data.forEach(card => {
+        const firstThreeCards = data.projects.slice(0, 3);
+    
+        firstThreeCards.forEach(card => {
             let tagsHtml = card.tags.map(tag => `<span class="card-tag px-2 py-1 mr-2">${tag}</span>`).join(' ');
             let cardHtml = `
             
                 <div class="card" id="${card.id}">
-                    <a class="card-link" href="${card.link}">
-                    <div class="card-top"><img class="card-image" alt="" src="${card.image}"/></div>
-                    <div class="card-mid">
-                        <h4 class="card-title font-weight-bold">${card.title}</h4>
-                        <label class="card-desc">${card.description}</label>
-                    </div>
+                    <a class="card-link" href="post.html?page=${card.id}">
+                        <div class="card-top">
+                            <img class="card-image" alt="" src="${card.image}"/>
+                        </div>
+                        <div class="card-mid">
+                            <h4 class="card-title font-weight-bold">${card.title}</h4>
+                            <label class="card-desc">${card.description}</label>
+                        </div>
                     </a>
                     <div class="card-footer">
                         ${tagsHtml}
                     </div>  
                 </div>
-
             `;
             $('#card-container').append(cardHtml);
             let portfolioCard = new Card(card.id, card.title, card.description, card.image);
             portfolioCard.initCard();
         });
     });
+    
 
 });
-

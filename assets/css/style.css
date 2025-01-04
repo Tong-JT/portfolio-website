@@ -243,6 +243,7 @@ body {
 .subtitle {
     line-height: 1.5;
     word-wrap:normal;
+    font-size: large;
 }
 
 
@@ -338,7 +339,7 @@ body {
 
 
 .card {
-    max-width: 100%;
+    max-width: 33%;
     background-color: white;
     text-align: left;
     position: relative;
@@ -348,6 +349,13 @@ body {
     &:hover {
         transform: scale(.95);
         box-shadow: 8px 10px rgba(150, 96, 92, 0.32);
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+
+    .card {
+        max-width: 100%;
     }
 }
 
@@ -372,6 +380,7 @@ body {
     border-top-right-radius: 10px;
     width: 100%;
     height: 100%;
+    object-fit: cover; 
 }
 
 .card-mid {
@@ -410,11 +419,15 @@ body {
     right: 0;
     background-color: rgb(255, 255, 255);
     border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .card-tag {
     border-radius: 10px;
     background-color: #eed7de;
+    flex-shrink: 0;
 }
 
 
@@ -504,3 +517,71 @@ textarea {
         text-decoration: none;
     }
 }
+
+
+.iso-box-section {
+    width: 100%;
+}
+
+.iso-box-wrapper {
+    width: 100%;
+    padding: 0;
+    clear: both;
+    position: relative;
+}
+
+#portfolio {
+    text-align: center;
+    padding-top: 3rem;
+  }
+  
+
+
+
+
+.filter {
+    font-family: 'Epilogue', sans-serif;
+}
+  /*filter css*/
+  .filter-wrapper {
+      width: 100%;
+      overflow: hidden;
+      padding-left: 0;
+  }
+  
+  .filter-wrapper li {
+      display: inline-block;
+      margin: 4px;
+  }
+  
+  .filter-wrapper li a {
+      color: #666;
+      padding: 8px 17px;
+      margin-right: 2px;
+      margin-left: 2px;
+      display: block;
+      text-decoration: none;
+      transition: all 0.4s ease-in-out;
+      border-radius: 10px;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    .filter-wrapper li a {
+        padding: 4px 10px;
+    }
+    .filter-wrapper li {
+        margin: 0;
+    }
+  }
+  .filter-wrapper li a:active {
+    background: rgb(191, 114, 121) !important;
+    border-radius: 10px;
+
+  }
+  .filter-wrapper li a:hover,
+  .filter-wrapper li a:focus {
+    background: rgb(191, 114, 121);
+    border-radius: 10px;
+    color: #ffffff;
+  }
+

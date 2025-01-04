@@ -1,26 +1,47 @@
-[
-  {
-    "id": "card1",
-    "title": "Project 1",
-    "link": "link/to/project.html",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "image": "./assets/images/coding.jpg",
-    "tags": ["UX Design", "HTML"]
-  },
-  {
-    "id": "card2",
-    "title": "Project 2",
-    "link": "link/to/project.html",
-    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
-    "image": "./assets/images/coding.jpg",
-    "tags": ["Python", "Machine Learning"]
-  },
-  {
-    "id": "card3",
-    "title": "Project 3",
-    "link": "link/to/project.html",
-    "description": "Unde omnis iste natus erro.",
-    "image": "./assets/images/coding.jpg",
-    "tags": ["Java", "GUI"] 
-  }
-]
+{
+  "filters": ["Interactive", "Java", "Javascript", "Python"],
+  "projects": [
+    {
+      "id": "spidertyper",
+      "title": "[Interactive] Spider Typer Game",
+      "image": "assets/images/spider.gif",
+      "tags": ["Javascript", "PHP", "MySQL", "HTML", "CSS", "Game", "Interactive"],
+      "description": "A speed typing game built using HTML, CSS, and JavaScript. Final version utilises a PHP and mySQL backend to graph user progress."
+    },
+    {
+      "id": "mrschicken",
+      "title": "[Interactive] Happy Mrs Chicken Clicker Game",
+      "image": "assets/images/chicken.gif",
+      "tags": ["Javascript", "HTML", "CSS", "Game", "Interactive"],
+      "description": "An idle click game built using HTML, CSS, and JavaScript."
+    },
+    {
+      "id": "fractaltrees",
+      "title": "Fractal Trees",
+      "image": "assets/images/tree.gif",
+      "tags": ["Python", "Haskell", "Scripting"],
+      "description": "Two applications which create a graphical L-System fractal tree using user inputted values."
+    },
+    {
+      "id": "chatrooms",
+      "title": "Websocket JavaFX Chatroom Application",
+      "image": "assets/images/chat.gif",
+      "tags": ["Java", "Networking", "Security", "Cloud"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "grassgenerator",
+      "title": "Autodesk Maya Grass Generator Plugin",
+      "image": "assets/images/coding.jpg",
+      "tags": ["Python", "Autodesk Maya", "Scripting"],
+      "description": "A Python plugin for generating grass in Autodesk Maya. Allows users to customize grass length, density, and placement on selected surfaces."
+    },
+    {
+      "id": "webbrowser",
+      "title": "JavaFX Browser",
+      "image": "assets/images/browser.gif",
+      "tags": ["Java"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}

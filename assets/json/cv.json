@@ -4,52 +4,41 @@
       "header": "Skills",
       "items": [
         {
-          "title": "Languages",
+          "title": "Languages/Libraries",
           "details": [
-            "Python",
-            "Java",
-            "C#",
-            "HTML",
-            "CSS",
-            "JavaScript"
+            "Java - JavaFX, JUnit",
+            "Python - OpenCV, Tensorflow, Qt, Tkinter",
+            "JavaScript - Vanilla, TypeScript",
+            "C# - ASP.NET Core/Web API",
+            "HTML/CSS - Vanilla, Bootstrap",
+            "PHP",
+            "R - ggplot2"
           ]
         },
         {
-          "title": "Frameworks & APIs",
+          "title": "Frameworks",
           "details": [
-            "Qt, PySide, PyQt",
-            "numPY",
-            "OpenGL, OpenCV"
+            "Node.js",
+            "React/React Native",
+            "Svelte",
+            "JQuery",
+            "Flask"
           ]
         },
         {
-          "title": "Software",
+          "title": "Database",
           "details": [
-            "Maya",
-            "Unity",
-            "Blender"
+            "mySQL",
+            "PostgreSQL",
+            "Firebase"
           ]
-        }
-      ]
-    },
-    {
-      "header": "Achievements",
-      "items": [
-        {
-          "title": "School of Pharmacy Recognition for Sustained Community Engagement",
-          "date": "University of Otago 2022"
         },
         {
-          "title": "University of Otago Student Leadership Award",
-          "date": "University of Otago 2022"
-        },
-        {
-          "title": "Leaders of Tomorrow Scholarship",
-          "date": "University of Otago 2017"
-        },
-        {
-          "title": "Johnsonville Youth Grant",
-          "date": "Johnsonville Youth Grants Trust 2017"
+          "title": "Cloud",
+          "details": [
+            "Amazon Web Services",
+            "Docker"
+          ]
         }
       ]
     },
@@ -57,29 +46,16 @@
       "header": "Education",
       "items": [
         {
-          "title": "Victoria University of Wellington",
-          "date": "Master of Software Development (MSwDev), 2024 - Present"
+          "title": "Master of Software Development (MSwDev)",
+          "date": "Victoria University of Wellington, 2024 - Present"
         },
         {
-          "title": "University of Auckland",
-          "date": "Postgraduate Certificate in Health (PgCertHSc), Digital Health, 2022 - 2023"
+          "title": "Postgraduate Certificate in Health (PgCertHSc), Digital Health",
+          "date": "University of Auckland, 2022 - 2023"
         },
         {
-          "title": "University of Otago",
-          "date": "Bachelor of Pharmacy (BPharm), 2018 - 2022"
-        }
-      ]
-    },
-    {
-      "header": "Research",
-      "items": [
-        {
-          "title": "Investigating pharmacist use of electronic health records",
-          "date": "chitecto beatae vitae dicta sunt explicab"
-        },
-        {
-          "title": "Publication 2",
-          "date": "chitecto beatae vitae dicta sunt explicab"
+          "title": "Bachelor of Pharmacy (BPharm), Distinction",
+          "date": "University of Otago, 2018 - 2022"
         }
       ]
     }
@@ -89,40 +65,57 @@
       "header": "Experience",
       "items": [
         {
-          "title": "Locum Pharmacist",
-          "date": "Self-employed, August 2023 - Present",
+          "title": "Locum/Staff Pharmacist",
+          "date": "Various sites, 2022 - Present",
           "details": [
-            "Proven ability to adapt quickly to new environments and work effectively in a variety of teams, including sole charge, solo, and larger teams.",
-            "Keeping up with legislative changes.",
-            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea",
-            "sequatur? Quis autem vel eum iure reprehe"
+            "Adapted to diverse pharmacy environments ranging from larger interdisciplinary teams to sole charge.",
+            "Demonstrated technical adaptability in using pharmacy technologies, including dispensing (Toniq, RxOne) and robotic systems (Alpaca, Cretem).",
+            "Facilitated the seamless integration of digital resources like the Salesforce-authenticated Covid Immunisation Register and Electronic Health Record systems (ReCare and Concerto)."
           ]
         },
         {
-          "title": "Staff Pharmacist/Intern Pharmacist",
-          "date": "Various sites, Dec 2021 - Aug 2023",
-          "details": [
-            "Liaised with government contacts to ensure smooth integration of digital resources, including RAT test and flu vaccination CIR, ReCare, and Concerto.",
-            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
-            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea"
-          ]
-        },
-        {
-          "title": "Elective Internship",
+          "title": "Science and Technical Intern",
           "date": "Ministry of Health, Nov 2020 - Dec 2020",
           "details": [
-            "sequatur? Quis autem vel eum iure reprehe",
-            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
-            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea"
+            "Conducted data analysis on internally stored health data utilising Tableau and Qlik dashboards.",
+            "Analysed clinical trial results to create technical documentation and presentation materials on COVID-19 treatments and vaccines.",
+            "Contributed to rapid reviews through presentations on collated research, collaborating with multidisciplinary teams to share insights."
+            ]
+        },
+        {
+          "title": "Clinical Data Entry Intern",
+          "date": "New Zealand Formulary, June 2021",
+          "details": [
+            "Cross-referenced international clinical data sources (British Formulary, Dynamed, Martindale) to maintain accurate and current monograph information.",
+            "Perform clinical checks on API data and patient leaflets, identifying discrepancies and ensuring necessary instructions and warnings were present."
           ]
         },
         {
-          "title": "Elective Externship",
-          "date": "New Zealand Formulary, June 2021",
+          "title": "Volunteer Consultant",
+          "date": "Ignite Consultants, Mar 2020 - June 2020",
           "details": [
-            "sequatur? Quis autem vel eum iure reprehe",
-            "e voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in",
-            "que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto bea"
+            "Collaborated with a team of 6 members to deliver business advice to a non-profit organization.",
+            "Conducted comprehensive risk management and stakeholder analysis, providing technical solutions and support for clients’ long-term goals.",
+            "Created a comprehensive report and presented findings to stakeholders, communicating of complex concepts in client-centric language."          
+            ]
+        }
+      ]
+    },
+    {
+      "header": "Research",
+      "items": [
+        {
+          "title": "AI driven clinical decision-making for antibiotic resistance",
+          "date": "University of Auckland (2023)",
+          "details": [
+            "A capstone research project designing an AI-driven clinical decision support system (CDSS) collating antibiotic prescribing guidelines, regional susceptibility reports, and anonymised patient resistance data for precise antibiotic prescribing."
+          ]
+        },
+        {
+          "title": "Investigating pharmacist use of electronic health records",
+          "date": "University of Otago (2021)",
+          "details": [
+            "A capstone research project analysing the use of electronic health records (EHR) and clinical decision support systems (CDSS) in New Zealand community pharmacies."
           ]
         }
       ]
