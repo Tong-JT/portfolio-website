@@ -140,7 +140,7 @@ $(document).ready(async function () {
                 }).join('')}
             </div>
             `;
-            $('.centre').append(centreHtml);
+            $('.mainbar').append(centreHtml);
             let centremain = new CVMain(section.header, section.items);
             centremain.initSection();
         });
@@ -222,5 +222,28 @@ $(document).ready(async function () {
         });
     });
     
+    $('#contactForm').on('submit', function(event) {
+        handleFormSubmit(event);
+    });
 
 });
+
+function handleFormSubmit(event) {
+    event.preventDefault();
+
+    $('#contactForm')[0].submit();
+
+    setTimeout(() => {
+
+        $('#contactForm')[0].reset();
+        $('#contactForm').find('input, textarea, button').attr('disabled', 'disabled');
+
+        $('.contact-form-container').html(`
+            <div class="thank-you-message">
+                <h3>Thank you for reaching out!</h3>
+                <p>Your message has been received. I'll get back to you as soon as possible.</p>
+            </div>
+        `);
+
+    }, 500);
+}

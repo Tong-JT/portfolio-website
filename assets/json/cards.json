@@ -2,6 +2,20 @@
   "filters": ["Interactive", "Java", "Javascript", "Python"],
   "projects": [
     {
+      "id": "qrcode",
+      "title": "QR Code Scanner Inventory Manager",
+      "image": "assets/images/coding.jpg",
+      "tags": ["Svelte","C#",".NET","PostgreSQL","REST API"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "chatrooms",
+      "title": "Websocket JavaFX Chatroom Application",
+      "image": "assets/images/chat.gif",
+      "tags": ["Java", "Networking", "Security", "Cloud"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
       "id": "spidertyper",
       "title": "[Interactive] Spider Typer Game",
       "image": "assets/images/spider.gif",
@@ -21,13 +35,6 @@
       "image": "assets/images/tree.gif",
       "tags": ["Python", "Haskell", "Scripting"],
       "description": "Two applications which create a graphical L-System fractal tree using user inputted values."
-    },
-    {
-      "id": "chatrooms",
-      "title": "Websocket JavaFX Chatroom Application",
-      "image": "assets/images/chat.gif",
-      "tags": ["Java", "Networking", "Security", "Cloud"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "id": "grassgenerator",

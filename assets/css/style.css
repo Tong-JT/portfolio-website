@@ -345,6 +345,8 @@ body {
     position: relative;
     transform: scale(.9);
     transition: all .3s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     &:hover {
         transform: scale(.95);
@@ -583,5 +585,12 @@ textarea {
     background: rgb(191, 114, 121);
     border-radius: 10px;
     color: #ffffff;
+  }
+
+  .centre {
+    text-align: center;
+  }
+  .video {
+    width: 100%;
   }
 
