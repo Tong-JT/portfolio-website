@@ -4,7 +4,7 @@
     {
       "id": "qrcode",
       "title": "QR Code Scanner Inventory Manager",
-      "image": "assets/images/coding.jpg",
+      "image": "assets/images/qr.gif",
       "tags": ["Svelte","C#",".NET","PostgreSQL","REST API"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
@@ -23,13 +23,6 @@
       "description": "A speed typing game built using HTML, CSS, and JavaScript. Final version utilises a PHP and mySQL backend to graph user progress."
     },
     {
-      "id": "mrschicken",
-      "title": "[Interactive] Happy Mrs Chicken Clicker Game",
-      "image": "assets/images/chicken.gif",
-      "tags": ["Javascript", "HTML", "CSS", "Game", "Interactive"],
-      "description": "An idle click game built using HTML, CSS, and JavaScript."
-    },
-    {
       "id": "fractaltrees",
       "title": "Fractal Trees",
       "image": "assets/images/tree.gif",
@@ -37,9 +30,16 @@
       "description": "Two applications which create a graphical L-System fractal tree using user inputted values."
     },
     {
+      "id": "mrschicken",
+      "title": "[Interactive] Happy Mrs Chicken Clicker Game",
+      "image": "assets/images/chicken.gif",
+      "tags": ["Javascript", "HTML", "CSS", "Game", "Interactive"],
+      "description": "An idle click game built using HTML, CSS, and JavaScript."
+    },
+    {
       "id": "grassgenerator",
       "title": "Autodesk Maya Grass Generator Plugin",
-      "image": "assets/images/coding.jpg",
+      "image": "assets/images/grass.gif",
       "tags": ["Python", "Autodesk Maya", "Scripting"],
       "description": "A Python plugin for generating grass in Autodesk Maya. Allows users to customize grass length, density, and placement on selected surfaces."
     },
