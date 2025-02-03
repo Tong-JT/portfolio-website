@@ -6,20 +6,20 @@
       "title": "QR Code Scanner Inventory Manager",
       "image": "assets/images/qr.gif",
       "tags": ["Svelte","C#",".NET","PostgreSQL","REST API"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "description": "An inventory management system utilising a QR code reader and generator. The frontend was built with Svelte and the backend utilises .NET and PostgreSQL."
     },
     {
       "id": "chatrooms",
       "title": "Websocket JavaFX Chatroom Application",
       "image": "assets/images/chat.gif",
       "tags": ["Java", "Networking", "Security", "Cloud"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "description": "A Java chatroom application utilising websockets and asymmetric client-server encryption."
     },
     {
       "id": "spidertyper",
       "title": "[Interactive] Spider Typer Game",
       "image": "assets/images/spider.gif",
-      "tags": ["Javascript", "PHP", "MySQL", "HTML", "CSS", "Game", "Interactive"],
+      "tags": ["Javascript", "PHP", "MySQL", "HTML", "CSS", "Interactive"],
       "description": "A speed typing game built using HTML, CSS, and JavaScript. Final version utilises a PHP and mySQL backend to graph user progress."
     },
     {
@@ -27,13 +27,13 @@
       "title": "Fractal Trees",
       "image": "assets/images/tree.gif",
       "tags": ["Python", "Haskell", "Scripting"],
-      "description": "Two applications which create a graphical L-System fractal tree using user inputted values."
+      "description": "L-System fractal tree generator which allow users to input values. Built for an assignment to compare coding with Python and Haskell."
     },
     {
       "id": "mrschicken",
       "title": "[Interactive] Happy Mrs Chicken Clicker Game",
       "image": "assets/images/chicken.gif",
-      "tags": ["Javascript", "HTML", "CSS", "Game", "Interactive"],
+      "tags": ["Javascript", "HTML", "CSS", "Interactive"],
       "description": "An idle click game built using HTML, CSS, and JavaScript."
     },
     {
@@ -42,13 +42,6 @@
       "image": "assets/images/grass.gif",
       "tags": ["Python", "Autodesk Maya", "Scripting"],
       "description": "A Python plugin for generating grass in Autodesk Maya. Allows users to customize grass length, density, and placement on selected surfaces."
-    },
-    {
-      "id": "webbrowser",
-      "title": "JavaFX Browser",
-      "image": "assets/images/browser.gif",
-      "tags": ["Java"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ]
 }
